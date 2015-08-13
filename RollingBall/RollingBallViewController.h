@@ -8,7 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import <SpriteKit/SpriteKit.h>
+#import <iAd/iAd.h>
 
-@interface RollingBallViewController : UIViewController
+@interface RollingBallViewController : UIViewController <ADBannerViewDelegate>
+
+@property (weak, nonatomic) IBOutlet ADBannerView *adBanner;
+@property (weak, nonatomic) IBOutlet UILabel      *lblTimerMessage;
 
 @end
